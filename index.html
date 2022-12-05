@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<p id="p">Hello</p>
+</body>
+<script>
+  let range =new Range();
+  let p = document.getElementById('p')
+  range.setStart(p.firstChild,2);
+  range.setEnd(p.firstChild,4);
+  // console.log(p)
+  console.log(range)
+
+</script>
+</html>

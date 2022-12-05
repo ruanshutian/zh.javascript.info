@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<div contenteditable="true" id="elem">click me</div>
+</body>
+<script>
+    let observer = new MutationObserver(mutationRecords=>{
+        console.log(mutationRecords);
+    });
+    observer.observe(elem,{
+        // childList: true, // 观察直接子节点
+        // subtree: true, // 及其更低的后代节点
+        characterDataOldValue: true, // 将旧的数据传递给回调
+        // attributes:true,
+    })
+
+
+</script>
+</html>
